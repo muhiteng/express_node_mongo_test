@@ -41,8 +41,8 @@ app.all('*',(req,res)=>{
         message:'wrong route'
     })
 })
- const port=process.env.port || 3000;
-app.listen(port,()=>{
-    //console.log(`working on port ${port}`)
-    logger.info(`working on port ${port}`)
+ const PORT=process.env.PORT || 3000;
+app.listen(PORT,()=>{
+    //console.log(`working on port ${PORT}`)
+    logger.info(`working on port ${PORT}`)
 })
